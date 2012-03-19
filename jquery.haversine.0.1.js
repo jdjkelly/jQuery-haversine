@@ -3,11 +3,11 @@
   
     // Converts degrees to Rads
 
-    if (typeof(Number.prototype.toRad) === "undefined") {
-	  Number.prototype.toRad = function() {
-	    return this * Math.PI / 180;
-	  }
-	}
+  if (typeof(Number.prototype.toRad) === "undefined") {
+    Number.prototype.toRad = function() {
+      return this * Math.PI / 180;
+    }
+  }
 
 	var R = 6371; // km
 	var dLat = (parseFloat(lat2)-parseFloat(lat1)).toRad();
