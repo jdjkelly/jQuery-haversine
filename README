@@ -1,0 +1,6 @@
+Usage
+=============
+
+$.haversine(lat1,long1,lat2,long2)
+
+This returns the distance between the points in KM.
