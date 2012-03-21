@@ -1,10 +1,20 @@
-Usage
-=============
+Use Case
+-------------
 
-$.haversine(lat1,long1,lat2,long2)
+jQuery Haversine is useful if you need to determine the distance between two points on a map. There are lots of obvious use cases for location-based data where you need to calculate the distance between a user’s current location and a number of search results. For example, a restaurant search in a particular neighourhood.
 
-This returns the distance between the points in KM.
+Instructions
+-------------
 
+jQuery Haversine is called with:
+
+$.haversine(lat1,long1,lat2,long2);
+This will return the distance (in km) between the two lat/long values. Future versions will allow you to specify a custom sphere radius (with the Earth’s radius set as a default), and the unit of measurement to output.
+
+You can pass the arguments as an integer (floating point included) or numeric string - the plugin uses parseFloat() to extract whatever gets passed.
+
+License
+-------------
 
 Copyright 2012 Joshua Kelly
 
