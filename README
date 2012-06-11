@@ -8,11 +8,13 @@ Instructions
 
 jQuery Haversine is called with:
 
-$.haversine(lat1,long1,lat2,long2);
+$.haversine(lat1,long1,lat2,long2,unit);
 
-This will return the distance (in km) between the two lat/long values. Future versions will allow you to specify a custom sphere radius (with the Earth’s radius set as a default), and the unit of measurement to output.
+This will return the distance between the two lat/long values in the specified unit. Future versions will allow you to specify a custom sphere radius (with the Earth’s radius set as a default).
 
 You can pass the arguments as an integer (floating point included) or numeric string - the plugin uses parseFloat() to extract whatever gets passed.
+
+Distance paramter expects "km" for kilometres, or anything else for miles.
 
 License
 -------------
